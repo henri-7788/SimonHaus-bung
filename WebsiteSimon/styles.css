@@ -1,0 +1,131 @@
+body {
+    max-width: 1080px;          /* max HD-Breite */
+    margin-right: auto;          /* Inhalt zentrieren */
+    margin-left: auto;           /* Inhalt zentrieren */
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: medium;
+    font-weight: normal;
+    line-height: 1.8em;
+}
+
+h1 {
+    font-family: Verdana;
+    font-size: 20px;
+    color: red;
+    font-style: italic;
+    padding-left: 10px;
+}
+
+h2 {
+    font-size: 16px;
+    color: white;
+    height: 30px;
+    padding-left: 5px;
+    background-color: green;
+}
+
+main img {
+    border-style: solid;
+    border-color: red;
+    width: 30%;
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    background-image: url('img/GlobalBike_header.jpg');
+    height: 100px;
+    top: 0px;
+    background-color: white;
+    position: sticky;            /* bleibt oben "kleben" */
+}
+
+footer {
+    margin-top: 50px;
+    display: block;
+    height: 75px;
+    background-image: url('img/footer.jpg');
+    border: 4px solid purple;
+}
+
+nav {
+    background-color: darkseagreen;
+    top: 100px;
+    position: sticky;
+}
+
+nav ul {
+    list-style: none;            /* keine Aufzählungszeichen */
+}
+
+nav li {
+    font-size: large;
+    font-weight: bold;
+    display: inline;             /* horizontale Ausrichtung */
+    margin-right: 65px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+table {
+    width: 100%;
+    border-style: outset;
+    border: 8px double;
+    border-color: darkslategrey;
+}
+
+th {
+    font-family: "Courier New", Courier, Monospace;
+    font-size: 18px;
+    width: 33%;
+    color: azure;
+    background-color: red;
+    padding-top: 7px;
+    padding-left: 5px;
+}
+
+td {
+    font-size: medium;
+    background-color: beige;
+    padding-left: 5px;
+}
+
+table img {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    border-style: solid;
+    border-width: 2px;
+    border-color: darkseagreen;
+    margin: 5px;
+    padding: 2px;
+}
+
+iframe {
+    border: none;
+    max-width: 100%;
+    float: right;
+    margin: 5px;
+    padding: 5px;
+}
+
+aside {
+    border: 3px dashed blue;
+}
+
+aside ul {
+    font-size: medium;
+    margin-left: 15px;
+    padding-left: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a:link    { color: white; }
+nav a:visited { color: white; }
+nav a:hover   { color: green; background-color: white; }
+
+aside a:link  { color: navy; text-decoration: underline; }
+aside a:hover { background-color: green; color: white; text-decoration: none; }
