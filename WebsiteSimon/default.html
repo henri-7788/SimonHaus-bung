@@ -6,9 +6,11 @@
     <title>Global Bike – Homepage</title>
 </head>
 <body>
+    <!-- Bleibt beim Scrollen oben sichtbar, Hintergrundbild kommt aus styles.css -->
     <header>
     </header>
 
+    <!-- Anker-Links (#katalog, #video) springen zu den section-IDs weiter unten -->
     <nav>
         <ul>
             <li><a href="default.html">Home</a></li>
@@ -18,6 +20,7 @@
     </nav>
 
     <main>
+        <!-- Jede section hat eine eigene ID, damit Nav/Aside per Anker darauf verlinken können -->
         <section id="intro">
             <h1>Global Bike - Fahrräder für jede Gelegenheit, egal ob Racing, Touring oder City Bike.</h1>
             <h2>Über uns</h2>
@@ -27,6 +30,7 @@
         <section id="racing">
             <a href="#katalog"><h2>Hochleistung für Rennsportler: Racing Bike</h2></a>
             <p>Unsere Racing Bikes sind für lange Strecken mit hohem Tempo konstruiert. Der Bügellenker ermöglicht es während der Fahrt verschiedene Griffpositionen und Sitzwinkel einzunehmen. Racing Bike bedeutet die Reinform eines Fahrrades – kompromisslos auf Effizienz und Geschwindigkeit getrimmt. Leistungssportler werden das geringe Gewicht schätzen – hier ist nur verbaut, was wirklich nötig ist. Hochwertige Komponenten schaffen beste Voraussetzungen für den Wettkampf gegen die Uhr. Einfaches Handling und robuste Fahreigenschaften sind wesentliche Merkmale dieses Rennrades. Die Verwendung von kohlenstofffaserverstärktem Kunststoff und hochfestem Leichtmetall sorgen für außergewöhnlich geringes Gewicht. Gleichzeitig wird ein Höchstmaß an Stabilität und Sicherheit gewährleistet. Selbst Einsteiger erhalten hier ein ideales Sportgerät, um Gefühl für die Anforderungen des Rennsports zu entwickeln und grundlegende Erfahrungen zu sammeln.</p>
+            <!-- float: left/right lässt den Text um das Bild herumlaufen; h2.clear-both (styles.css) verhindert, dass die nächste grüne Leiste darüber rutscht -->
             <img alt="Racing Bike" src="img/racing-bike.jpg" style="float: left"/>
         </section>
 
@@ -44,6 +48,7 @@
 
         <section id="katalog">
             <h2>Produktkatalog</h2>
+            <!-- Erste <tr> = Kopfzeile mit <th>, danach 8 Produktzeilen mit je 3 <td> (Bild/Beschreibung/Preis) -->
             <table>
                 <tr>
                     <th>Artikelbild</th>
@@ -90,6 +95,7 @@
                     <td><p>Gepäckträgertaschen</p><p>Das Paar hochwertiger Gepäckträgertaschen zur einfachen Befestigung am Gepäckträger.</p></td>
                     <td>185,- €</td>
                 </tr>
+                <!-- colspan="3" lässt die Hinweiszeile über alle 3 Spalten gehen -->
                 <tr>
                     <td colspan="3">Alle Preise verstehen sich zzgl. der gültigen gesetzlichen MwSt.</td>
                 </tr>
@@ -100,6 +106,7 @@
     <aside>
         <section id="video">
             <h2>Der direkte Weg zu unserem Sortiment</h2>
+            <!-- YouTube-Video per iframe-Embed eingebunden -->
             <iframe src="https://www.youtube.com/embed/LzKbe0N06gM" allowfullscreen></iframe>
             <ul>
                 <li><a href="#racing">Racing Bike</a></li>

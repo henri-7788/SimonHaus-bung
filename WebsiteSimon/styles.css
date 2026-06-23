@@ -22,7 +22,7 @@ h2 {
     height: 30px;
     padding-left: 5px;
     background-color: green;
-    clear: both;
+    clear: both;          /* verhindert, dass die Leiste neben/über ein gefloatetes Bild rutscht */
 }
 
 main img {
@@ -51,7 +51,7 @@ footer {
 
 nav {
     background-color: darkseagreen;
-    top: 100px;
+    top: 100px;          /* bleibt direkt unter dem 100px hohen Header kleben */
     position: sticky;
 }
 
